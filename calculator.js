@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       toastr.error('Por favor, preencha todos os campos.');
     } else {
       var total = preco * horas;
-      document.getElementById('resultado').innerHTML = 'Valor total do serviço: R$ ' + total.toFixed(2);
+      document.getElementById('resultado').innerHTML = 'Valor total do serviço:   R$ ' + total.toFixed(2);
     }
   });
 

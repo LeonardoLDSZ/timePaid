@@ -120,7 +120,8 @@ input[type="date"] {
 }
 
 button[type="button"] {
-  display: block;
+  display: inline-block;
+  margin-right: 10px;
   width: 100%;
   padding: 10px;
   background-color: #4CAF50;
