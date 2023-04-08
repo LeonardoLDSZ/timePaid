@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     $('#gerar-pdf').prop('disabled', false);   
   });
-
+  
   gerarPdfBtn.addEventListener('click', function() {
     var data = document.getElementById('data').value;
     var horas = parseFloat(document.getElementById('horas').value);
@@ -50,8 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
       doc.text('Solicitante:', 20, 90);
       doc.text(solicitante, 140, 90);
       doc.text('Valor total do serviço:', 20, 100);
-      doc.text('R$ ' + total.toFixed(2), 140, 100);
-      doc.save('detalhes_servico.pdf');
+      doc.text('R$ ' + total.toFixed(2), 140, 100);    
+      doc.text("_______________________", 70, 200);
+      doc.setFontSize(20);
+      doc.text("Prestador", 88, 210);
+      doc.save('detalhes_servico.pdf');      
     }
   });
 });
